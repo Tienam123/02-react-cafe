@@ -1,6 +1,6 @@
-import css from './the-notification.module.css'
+import css from './Notification.module.css'
 
-const TheNotification = () => {
+const Notification = () => {
     return (
         <div className={css.container}>
         <p className={css.message}>No feedback yet</p>
@@ -9,4 +9,4 @@ const TheNotification = () => {
 };
 
 
-export default TheNotification;
+export default Notification;

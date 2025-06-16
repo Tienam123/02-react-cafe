@@ -1,4 +1,4 @@
-import css from './cafe-info.module.css'
+import css from './CafeInfo.module.css'
 
 const CafeInfo = () => {
     return (

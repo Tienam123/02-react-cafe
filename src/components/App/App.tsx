@@ -1,10 +1,11 @@
 import css from './App.module.css'
-import CafeInfo from "../cafe-info/cafe-info.tsx";
 import {useState} from "react";
-import VoteOptions from "../vote-options/vote-options.tsx";
 import type {Votes, VoteType} from "../../types/votes.ts";
-import VoteStats from "../vote-stats/vote-stats.tsx";
-import TheNotification from "../the-notification/the-notification.tsx";
+import CafeInfo from "../CafeInfo/CafeInfo.tsx";
+import Notification from "../Notification/Notification.tsx";
+import VoteStats from "../VoteStats/VoteStats.tsx";
+import VoteOptions  from "../VoteOptions/VoteOptions.tsx";
+
 
 function App() {
     const [votes, setVotes] = useState<Votes>({
@@ -37,8 +38,7 @@ function App() {
                 onReset={resetVotes}
                 canReset={totalVotes>0}
             />
-            {totalVotes ? ( <VoteStats votes={votes} totalVotes={totalVotes} positiveRate={positiveRates}/>) : (<TheNotification />)}
-
+            {totalVotes ? ( <VoteStats votes={votes} totalVotes={totalVotes} positiveRate={positiveRates}/>) : (<Notification />)}
         </div>
     )
 }
