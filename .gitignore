@@ -11,8 +11,6 @@ node_modules
 dist
 dist-ssr
 *.local
-src/vite-env.d.ts
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
