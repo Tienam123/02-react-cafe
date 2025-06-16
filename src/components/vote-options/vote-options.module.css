@@ -1,0 +1,16 @@
+.button {
+    padding: 10px 20px;
+    background: darkblue;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    touch-action: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.button:last-child {
+    margin-right: 0;
+}
+.reset {
+background: red;
+}
